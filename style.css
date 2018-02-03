@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cc6666;
+    color: white;
+    transition: all 1s linear;
+}
+
+nav {
+    background-color: #444;
+    padding: 20px;
+    text-align: right;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul.menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1.2px;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+nav ul.menu li:hover {
+    color: #ccc;
+}
+
+nav ul.menu li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* for time keeping */
+#timer {
+    display: none !important;
+}
+
+/* for time displaying */
+#timeDisplay {
+    padding: 100px 0px;
+    font-size: 200px;
+    letter-spacing: 1.4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+div.container2 {
+    text-align: center;
+}
+
+input[type=button] {
+    /* removing default browser's settings; without this, input styling doesn't work correctly on OS X */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: inherit;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    width: 200px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.2s ease-out;
+    outline: none;
+}
+
+input[type=button]:hover {
+    transform: scale(1.1);
+    background-color: #aa6666;
+}
+
+button[type=button] {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: inherit;
+    border: 2px solid #444;
+    border-radius: 5px;
+    margin: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.2s ease-out;
+    font-size: 16px;
+    background: #444;
+    outline: none;
+}
+
+button[type=button]:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+
+/* ABOUT SECTION */
+
+.container3 {
+    padding: 20px 80px;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+    letter-spacing: 1.2px;
+    padding: 10px 0px;
+    text-align: justify;
+    font-weight: 200;
+}
+
+blockquote {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #444;
+}
+
+ol.steps {
+    list-style-position: inside;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+    line-height: 150%;
+    letter-spacing: 1.2px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+a.outside {
+    font-weight: bold;
+    text-decoration: none;
+    color: #444;
+}
+
+.infobtn {
+    color: #333;
+    font-weight: 700;
+}
+
+@media (max-width: 1050px) {
+    nav {
+        text-align: center;
+    }
+    
+    #timeDisplay {
+        font-size: 102px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    
+    input[type=button] {
+        padding: 10px 15px;
+        margin: 30px auto;
+        font-size: 12px;
+        display: block;
+    }
+    
+    button[type=button] {
+        padding: 10px 20px;
+        border: 2px solid #444;
+        margin: 10px;
+        font-size: 12px;       
+    }
+    
+    .container3 {
+        padding: 20px 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    ol.steps {
+        font-size: 14px;
+    }
+}
+

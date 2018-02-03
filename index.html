@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pomodoro timer</title>
+        <meta name="author" content="daniel jackowiak" />
+        <meta name="keywords" content="front-end, web design, www, pages, pomodoro timer" />
+        <meta name="description" content="front-end assignments of jm" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Work+Sans" rel="stylesheet">      
+    </head>
+    <body>
+        <main>
+            <audio id="audio" src="finish.wav"></audio>              
+                <div id="container1">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html">Pomodoro</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                    <p id="timer">1500</p>                   
+                    <p id="timeDisplay">25:00</p>                    
+                    
+                    <div class="container2">
+                        <input type="button" value="start" id="start" /><!--
+                     --><input type="button" value="stop" id="stop" /><!--
+                     --><input type="button" id="break" value="break" /><!--
+                     --><input type="button" id="session" value="next session" />
+                        <button type="button" id="plus">+</button>
+                        <button type="button" id="minus">-</button>
+                    </div>
+                </div>
+        </main>        
+        
+        <script src="jquery-3.2.1.js"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
